@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
+      <div className="vl"></div>
       <Info/>
       <NERForm/>
     </div>

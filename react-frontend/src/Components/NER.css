@@ -1,0 +1,44 @@
+button{
+    margin-left: 10px;
+}
+
+.background{
+    background-color: #D5D6EA;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.instruction{
+    margin-bottom: 10px;
+}
+
+.formOutline{
+    margin-left: 20px;
+}
+
+form{
+    padding-bottom: 10px;
+}
+
+.backgroundOne{
+    background-color: #F6F6EB;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.backgroundTwo{
+    background-color: #f6ecf5;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.entityOutline{
+    margin-top:20px
+}
+
+.backgroundThree{
+    background-color: #d7ecd9;
+    padding: 3px;
+    border-radius: 5px;
+}

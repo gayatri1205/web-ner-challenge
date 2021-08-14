@@ -5,14 +5,17 @@ const Entities = ({payload}) => {
     const data=payload
     if(data.length>0){
         return(
-            data.map((item,index)=>{
+            <div className="entityOutlines">
+                <p>Named Entities:</p>
+                {data.map((item,index)=>{
                 console.log(item)
                 return(
-                    <div>
-                        <p key={index}>{item.name}:&nbsp;&nbsp;{item.label}</p>
+                    <div key={index}>
+                        <p key={index}><span className="backgroundTwo">{item.name}</span>:&nbsp;&nbsp;<span className="backgroundThree">{item.label}</span></p>
                     </div>
                 )
-            })
+            })}
+            </div>
         )
     }else{
         return(

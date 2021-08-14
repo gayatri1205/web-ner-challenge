@@ -19,6 +19,9 @@ const NERForm = () => {
     const getData = (e) => {
         e.preventDefault()
         console.log(content)
+        if(content==''){
+            alert("Input cannot be empty")
+        }
         let textToSend = {
             text:content
         }
@@ -45,12 +48,12 @@ const NERForm = () => {
     //     getData()
     // },[])
     return (
-        <div>
+        <div className="formOutline">
             <form>
-                <label for="inputText" >Enter Your Text Here</label><br></br>
-                <textarea rows="10" cols="30" id="inputText" placeholder="Your text goes here" value={content} onChange={(e)=>setContent(e.target.value)}/><br></br>
-                <input type="submit" value="Submit" onClick={e=>getData(e)}></input>
-                <button onClick={e=>clearData(e)}>Clear</button>
+                <label for="inputText" className="instruction"><h4>Enter Your Text Here</h4></label><br></br>
+                <textarea class="form-control" rows="10" cols="30" id="inputText" placeholder="Your text goes here" value={content} onChange={(e)=>setContent(e.target.value)}/><br></br>
+                <input type="submit" className="btn btn-primary" value="Submit" onClick={e=>getData(e)}></input>
+                <button className="btn btn-secondary" onClick={e=>clearData(e)}>Clear</button>
             </form>
             <Entities payload={payload}/>
         </div>
